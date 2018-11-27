@@ -18,7 +18,7 @@ public class DefaultRecoverConfig implements RecoverConfig {
 
     private int recoverDuration = 120; //120 seconds
 
-    private String cronExpression = "0 */1 * * * ?";
+    private String cronExpression = "*/20 * * * * ?";
 
     private int asyncTerminateThreadPoolSize = 1024;
 

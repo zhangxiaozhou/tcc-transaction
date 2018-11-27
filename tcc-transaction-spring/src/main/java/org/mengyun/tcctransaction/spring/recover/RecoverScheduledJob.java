@@ -7,6 +7,8 @@ import org.quartz.Scheduler;
 import org.springframework.scheduling.quartz.CronTriggerFactoryBean;
 import org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean;
 
+import javax.annotation.Resource;
+
 /**
  * Created by changming.xie on 6/2/16.
  */
@@ -16,6 +18,7 @@ public class RecoverScheduledJob {
 
     private TransactionConfigurator transactionConfigurator;
 
+    @Resource
     private Scheduler scheduler;
 
     public void init() {
